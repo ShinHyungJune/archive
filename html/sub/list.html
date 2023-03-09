@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>서브</title>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../../comn/css/default.css">
+    <link rel="stylesheet" href="../../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../../comn/css/animate.css">
+    <link rel="stylesheet" href="../../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../../comn/css/common.css">
+    <link rel="stylesheet" href="../../comn/css/im_board.css">
+    <link rel="stylesheet" href="../../comn/css/style.css"> 
+    <link rel="stylesheet" href="../../comn/css/base.css">
+    <link rel="stylesheet" href="../../comn/css/custom.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="../../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../../comn/js/swiper.min.js"></script>
+    <script src="../../comn/js/aos-2.3.1.js"></script>
+    <script src="../../comn/js/common.js"></script> 
+    <script src="../../comn/js/custom.js?a=1"></script>
+</head>
+<body>
+
+<div class="skip-navigation">
+    <a href="#contents_wrap">메뉴 건너뛰기</a>
+</div>
+<div class="wrapper">
+	<header>
+		<div class="box">
+			<div class="container">
+				<h1><a href=""><img src="../../comn/img/logo.png"></a></h1>
+				<div class="gnb">
+					<div class="box">
+						<div class="gnb-head">
+							<h2><a href=""><img src="../../comn/img/logo.png"></a></h2>
+							<a href="javascript:;" onclick="menuClose();">닫기</a>
+						</div>
+						<ul>
+							<li><a href="">자료명별</a></li>
+							<li><a href="">유형별</a></li>
+							<li><a href="">분야별</a></li>
+							<li><a href="">시군별</a></li>
+							<li><a href="">센터소개</a></li>
+							<li><a href="">커뮤니티</a></li>
+						</ul>
+					</div>
+				</div>
+				<a href="javascript:;" onclick="menuOpen(this);" class="menu">메뉴바</a>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="sub-wrap">
+			<div class="sub-search">
+				<div class="search-title">
+					<div>
+						<img src="../../comn/img/img_search_logo.png">
+						<b>아카이브 시스템</b>
+					</div>
+				</div>
+				<div class="search-form">
+					<form>
+						<input type="text" placeholder="검색어를 입력하세요.">
+						<a href="" class="submit">검색</a>
+					</form>
+				</div>
+			</div>
+			<div class="container">
+				<div class="sub-top">
+					<div class="sub-top-loca">
+						<ul>
+							<li class="home">홈</li>
+							<li>1차분류</li>
+							<li>2차분류</li>
+						</ul>
+					</div>
+					<div class="sub-top-control">
+						<div>
+							<a href="" class="big">+</a>
+							<a href="" class="word">가</a>
+							<a href="" class="small">-</a>
+						</div>
+						<a href="" class="print">프린트</a>
+					</div>
+				</div>
+				<div class="sub-both">
+					<div class="sub-both-left">
+						<div class="sub-both-left-cate">
+							<h2>자료명별</h2>
+							<ul>
+								<li class="active"><a href="">전체</a></li>
+								<li>
+									<dl>
+										<dd><a href="">가</a></dd>
+										<dd><a href="">나</a></dd>
+										<dd><a href="">다</a></dd>
+										<dd><a href="">라</a></dd>
+										<dd><a href="">마</a></dd>
+										<dd><a href="">바</a></dd>
+										<dd><a href="">사</a></dd>
+										<dd><a href="">아</a></dd>
+										<dd><a href="">자</a></dd>
+										<dd><a href="">차</a></dd>
+										<dd><a href="">카</a></dd>
+										<dd><a href="">타</a></dd>
+										<dd><a href="">파</a></dd>
+										<dd><a href="">하</a></dd>
+										<dd><a href="">기타</a></dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sub-both-right">
+						<div class="sub-board-search">
+							<form>
+								<div class="board-search-left">
+									<select>
+										<option>유형</option>
+									</select>
+									<select>
+										<option>서명</option>
+									</select>
+									<input type="text" placeholder="내용을 입력해주세요.">
+									<a href="" class="submit">검색</a>
+								</div>
+								<div class="board-search-right">
+									<select>
+										<option>등록일순</option>
+									</select>
+									<select>
+										<option>오름차순</option>
+									</select>
+									<a href="javascript:;" id="galleryType" class="active">갤러리형</a>
+									<a href="javascript:;" id="listType">리스트형형</a>
+								</div>
+							</form>
+						</div>
+						<div class="sub-board-total mt45 mt-lg-20 mb10">
+							Total&nbsp;<b>401</b>개 (<b>1</b>/41 페이지)
+						</div>
+						<div class="sub-board-list">
+							<table>
+								<thead>
+									<tr>
+										<th width="150px">유형</th>
+										<th width="70%">서명</th>
+										<th width="225px">자료형태</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td class="pc">논문자료</td>
+										<td>
+											<div class="mo">
+												<b>논문자료</b>
+											</div>
+											<div class="sub-board-list-box">
+												<a href="">산사태 유발 예측을 위한 국지강우 임계치에 대한 연구 산사태 유발 예측을 위한 국지강우 임계치에 대한 연구</a>
+												<dl>
+													<dd>이원영</dd>
+													<dd>이화여자대학교</dd>
+													<dd>2019</dd>
+												</dl>
+												<div class="sub-index mt10 mt-lg-5">
+													<button type="button" onclick="indexToggle(this);">목차</button>
+													<div class="sub-index-detail">
+														<a href="javascript:;" class="close" onclick="indexClose(this);">닫기</a>
+														<dl>
+															<dd>
+																<strong>1. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+															<dd>
+																<strong>2. 산업전사, 광부들의 실생활</strong>
+																<div>
+																	<p><em>1</em><span>탄광촌 아이들도 아는데, 도시선생님은 모르는 용어: 노보리와 동밭</span></p>
+																	<p><em>2</em><span>진짜 광부는 채탄부와 굴진부</span></p>
+																	<p><em>3</em><span>세계 기록을 깬 고속굴진, 동발엔 1등이라는 보갱부</span></p>
+																</div>
+															</dd>
+														</dl>
+													</div>
+												</div>
+												<div class="mo">
+													<ul>
+														<li><span>원문</span></li>
+														<li><span>PDF</span></li>
+														<li class="active"><span>미디어</span></li>
+													</ul>
+												</div>
+											</div>
+										</td>
+										<td class="pc">
+											<ul>
+												<li><span>원문</span></li>
+												<li><span>PDF</span></li>
+												<li class="active"><span>미디어</span></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="sub-paging">
+							<ul>
+								<li class="paging first"><a href="">처음</a></li>
+								<li class="paging prev"><a href="">이전</a></li>
+								<li class="active"><a href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li class="paging next"><a href="">다음</a></li>
+								<li class="paging last"><a href="">맨끝</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-link">
+					<ul>
+						<li><a href="">홈페이지 이용안내</a></li>
+						<li><a href="">개인정보 처리방침</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-guide">
+					<ul>
+						<li class="familysite">
+							<a href="javascript:;" onclick="familySite();">관련사이트</a>
+							<dl>
+								<dd><a href="">관련사이트1</a></dd>
+								<dd><a href="">관련사이트2</a></dd>
+								<dd><a href="">관련사이트3</a></dd>
+							</dl>
+						</li>
+						<li class="top"><a href="javascript:;" onclick="toTop();">TOP</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<h2><img src="../../comn/img/img_footer_logo.png"></h2>
+				<ul>
+					<li>
+						<div class="image"><img src="../../comn/img/img_footer_univer_01.png"></div>
+						<b>강원연구원 강원학연구센터</b>
+						<div class="info">
+							<dl>
+								<dd>
+									<b>주소</b>
+									<p>(24265) 강원도 춘천시 중앙로 5 강원연구원</p>
+								</dd>
+								<dd>
+									<b>TEL</b>
+									<p>033-250-2980</p>
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div class="image"><img src="../../comn/img/img_footer_univer_02.png"></div>
+						<b>강원대학교 국학연구소</b>
+						<div class="info">
+							<dl>
+								<dd>
+									<b>주소</b>
+									<p>(24341) 강원도 춘천시 강원대학길 1(효자동) 강원대학교</p>
+								</dd>
+								<dd>
+									<b>TEL</b>
+									<p>033-250-8102</p>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+				<div class="copyright">
+					<p>Copyrignt © 2020 강원연구원. All rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../../comn/js/swiper.js"></script> 
+</body>
+</html>

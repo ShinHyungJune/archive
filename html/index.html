@@ -1,0 +1,999 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>메인</title>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../comn/css/default.css">
+    <link rel="stylesheet" href="../comn/css/aos-2.3.1.css">
+    <link rel="stylesheet" href="../comn/css/animate.css">
+    <link rel="stylesheet" href="../comn/css/swiper.min.css">
+    <link rel="stylesheet" href="../comn/css/common.css">
+    <link rel="stylesheet" href="../comn/css/im_board.css">
+    <link rel="stylesheet" href="../comn/css/style.css"> 
+    <link rel="stylesheet" href="../comn/css/base.css">
+    <link rel="stylesheet" href="../comn/css/custom.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="../comn/js/jquery-1.7.1.min.js"></script>
+    <script src="../comn/js/swiper.min.js"></script>
+    <script src="../comn/js/aos-2.3.1.js"></script>
+    <script src="../comn/js/common.js"></script> 
+    <script src="../comn/js/custom.js"></script>
+</head>
+<body>
+
+<div class="skip-navigation">
+    <a href="#contents_wrap">메뉴 건너뛰기</a>
+</div>
+<div class="wrapper">
+	<header>
+		<div class="box">
+			<div class="container">
+				<h1><a href=""><img src="../comn/img/logo.png"></a></h1>
+				<div class="gnb">
+					<div class="box">
+						<div class="gnb-head">
+							<h2><a href=""><img src="../comn/img/logo.png"></a></h2>
+							<a href="javascript:;" onclick="menuClose();">닫기</a>
+						</div>
+						<ul>
+							<li><a href="">자료명별</a></li>
+							<li><a href="">유형별</a></li>
+							<li><a href="">분야별</a></li>
+							<li><a href="">시군별</a></li>
+							<li><a href="">센터소개</a></li>
+							<li><a href="">커뮤니티</a></li>
+						</ul>
+					</div>
+				</div>
+				<a href="javascript:;" onclick="menuOpen(this);" class="menu">메뉴바</a>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="main-wrap">
+			<div class="main-search">
+				<div class="container">
+					<div class="search-title">
+						<div>
+							<img src="../comn/img/img_search_logo.png">
+							<b>아카이브 시스템</b>
+						</div>
+						<p>평화와 번영 강원시대, 강원도 정체성 확립과 미래가치 구현</p>
+					</div>
+					<div class="search-form">
+						<form>
+							<select>
+								<option>전체</option>
+								<option>강원아카이브1</option>
+								<option>강원아카이브2222</option>
+							</select>
+							<input type="text" placeholder="검색어를 입력하세요.">
+							<a href="" class="submit">검색</a>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="main-result">
+				<div class="container">
+					<div class="result-title">
+						<div class="main-title flex">
+							<h2>분야별 통계</h2>
+							<h3>총 401건</h3>
+						</div>
+						<div class="main-control">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+						</div>
+					</div>
+				</div>
+				<div class="result-image">
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_01.jpg');"></div>
+									<div class="list-content">
+										<b>사회과학</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_01.jpg');"></div>
+									<div class="list-content">
+										<b>자연과학</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_02.jpg');"></div>
+									<div class="list-content">
+										<b>기술과학</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_03.jpg');"></div>
+									<div class="list-content">
+										<b>문학</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_04.jpg');"></div>
+									<div class="list-content">
+										<b>언어</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_05.jpg');"></div>
+									<div class="list-content">
+										<b>예술</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_06.jpg');"></div>
+									<div class="list-content">
+										<b>역사</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="">
+									<div class="list-image" style="background-image:url('../comn/img/img_main_result_07.png');"></div>
+									<div class="list-content">
+										<b>예술</b>
+										<span>자세히보기</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main-map">
+				<div class="container">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<!-- 철원 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_01.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">철원페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>철원군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //철원 -->
+							<!-- 화천 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_02.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">화천페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>화천군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //화천 -->
+							<!-- 양구 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_03.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">양구페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>양구군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //양구 -->
+							<!-- 인제 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_04.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">인제페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>인제군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //인제 -->
+							<!-- 고성 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_05.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">고성페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>고성군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //고성 -->
+							<!-- 속초 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_06.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">속초페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>속초군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //속초 -->
+							<!-- 춘천 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_07.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">춘천페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>춘천군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //춘천 -->
+							<!-- 홍천 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_08.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">홍천페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>홍천군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //홍천 -->
+							<!-- 양양 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_09.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">양양페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>양양군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //양양 -->
+							<!-- 횡성 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_10.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">횡성페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>횡성군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //횡성 -->
+							<!-- 평창 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_11.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">평창페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>평창군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //평창 -->
+							<!-- 강릉 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_12.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">강릉페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>강릉군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //강릉 -->
+							<!-- 원주 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_13.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">원주페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>원주군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //원주 -->
+							<!-- 영월 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_14.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">영월페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>영월군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //영월 -->
+							<!-- 동해 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_16.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">동해페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>동해군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //동해 -->
+							<!-- 태백 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_17.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">태백페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>태백군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //태백 -->
+							<!-- 삼척 -->
+							<div class="swiper-slide">
+								<div class="main-map-box">
+									<div class="main-map-image">
+										<img src="../comn/img/img_map_18.png">
+									</div>
+									<div class="main-map-content">
+										<div class="content-head">
+											<div class="main-title">
+												<h2>시군별 자료</h2>
+												<p>지역을 선택하시면 해당 지역의 자료를 볼 수 있습니다.</p>
+											</div>
+											<div class="main-control">
+												<div class="swiper-button-prev"></div>
+												<div class="swiper-pagination"></div>
+												<div class="swiper-button-next"></div>
+											</div>
+										</div>
+										<div class="content-body">
+											<div class="more">
+												<a href="">삼척페이지 바로가기</a>
+											</div>
+											<div class="list">
+												<div class="list-head">
+													<h3>삼척군</h3>
+													<a href="">더보기</a>
+												</div>
+												<div class="list-body">
+													<ul>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 소양로 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 -춘천 죽림동 주교좌 성당-</a></li>
+														<li><a href="">[역사] 강원의 근대문화유산 - 구 영원한 도움의 성모수녀회</a></li>
+														<li><a href="">[역사] 1920년대 ‘춘천청년회’와 춘천의 사회운동</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- //삼척 -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-video">
+				<div class="container">
+					<div class="main-title">
+						<h2>시각아카이브</h2>
+						<h3>영상</h3>
+					</div>
+					<div class="swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="iframe-box">
+									<iframe width="1280" height="676" src="https://www.youtube.com/embed/domSvag3STE" title="[강원학TV] 강원의 어촌음식문화_바다의 귀족 연체류 이야기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<p>강원의 어촌음식문화 -바다의 귀족 연체류 이야기-</p>
+							</li>
+							<li class="swiper-slide">
+								<div class="iframe-box">
+									<iframe width="1280" height="676" src="https://www.youtube.com/embed/nxY0ifdjEAI" title="[강원학TV] 강원의 어촌음식문화_발효와 건조를 이용한 바다음식 이야기" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<p>강원의 어촌음식문화 -바다의 귀족 연체류 이야기-</p>
+							</li>
+							<li class="swiper-slide">
+								<div class="iframe-box">
+									<iframe width="1280" height="720" src="https://www.youtube.com/embed/0pJHd9x4ikY" title="[강원학TV] 강원의 건축_고성 왕곡마을" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<p>강원의 어촌음식문화 -바다의 귀족 연체류 이야기-</p>
+							</li>
+							<li class="swiper-slide">
+								<div class="iframe-box">
+									<iframe width="1280" height="720" src="https://www.youtube.com/embed/GgK1eiJq4hQ" title="[강원학TV] 강원의 건축_강릉 선교장" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+								</div>
+								<p>강원의 어촌음식문화 -바다의 귀족 연체류 이야기-</p>
+							</li>                  
+						</ul>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</div>
+			<div class="main-logo">
+				<div class="container">
+					<ul>
+						<li><a href="" target="_blank"><img src="../comn/img/img_footer_site_01.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="../comn/img/img_footer_site_02.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="../comn/img/img_footer_site_03.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="../comn/img/img_footer_site_04.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="../comn/img/img_footer_site_05.jpg"></a></li>
+						<li><a href="" target="_blank"><img src="../comn/img/img_footer_site_06.jpg"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="footer-top-link">
+					<ul>
+						<li><a href="">홈페이지 이용안내</a></li>
+						<li><a href="">개인정보 처리방침</a></li>
+					</ul>
+				</div>
+				<div class="footer-top-guide">
+					<ul>
+						<li class="familysite">
+							<a href="javascript:;" onclick="familySite();">관련사이트</a>
+							<dl>
+								<dd><a href="">관련사이트1</a></dd>
+								<dd><a href="">관련사이트2</a></dd>
+								<dd><a href="">관련사이트3</a></dd>
+							</dl>
+						</li>
+						<li class="top"><a href="javascript:;" onclick="toTop();">TOP</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<h2><img src="../comn/img/img_footer_logo.png"></h2>
+				<ul>
+					<li>
+						<div class="image"><img src="../comn/img/img_footer_univer_01.png"></div>
+						<b>강원연구원 강원학연구센터</b>
+						<div class="info">
+							<dl>
+								<dd>
+									<b>주소</b>
+									<p>(24265) 강원도 춘천시 중앙로 5 강원연구원</p>
+								</dd>
+								<dd>
+									<b>TEL</b>
+									<p>033-250-2980</p>
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div class="image"><img src="../comn/img/img_footer_univer_02.png"></div>
+						<b>강원대학교 국학연구소</b>
+						<div class="info">
+							<dl>
+								<dd>
+									<b>주소</b>
+									<p>(24341) 강원도 춘천시 강원대학길 1(효자동) 강원대학교</p>
+								</dd>
+								<dd>
+									<b>TEL</b>
+									<p>033-250-8102</p>
+								</dd>
+							</dl>
+						</div>
+					</li>
+				</ul>
+				<div class="copyright">
+					<p>Copyrignt © 2020 강원연구원. All rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="../comn/js/swiper.js?a=1"></script> 
+</body>
+</html>
