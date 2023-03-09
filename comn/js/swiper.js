@@ -95,3 +95,46 @@ var swiper3 = new Swiper(".main-map .swiper-container", {
 		prevEl: ".main-map .swiper-button-prev",
 	},
 });
+
+var swiper4 = new Swiper(".swiper01 .swiper-container", {
+	slidesPerView: 1,
+    spaceBetween: 0,
+	loopAdditionalSlides: 1,
+	loop: true,
+	speed: 1000,
+	observer: true,
+	observeParents: true,
+	centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	navigation: {
+		nextEl: ".swiper01 .swiper-button-next",
+		prevEl: ".swiper01 .swiper-button-prev",
+	},
+});
+		
+var swiper5 = new Swiper(".swiper02 .swiper-container", {
+	slidesPerView: 1,
+    spaceBetween: 0,
+	loopAdditionalSlides: 1,
+	loop: true,
+	speed: 1000,
+	observer: true,
+	observeParents: true,
+	centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	navigation: {
+		nextEl: ".swiper02 .swiper-button-next",
+		prevEl: ".swiper02 .swiper-button-prev",
+	},
+});
+
+$(document).on("click", "map area" ,function(){
+	var index = $(this).index()+2; 
+	swiper3.slideTo(index);
+});
