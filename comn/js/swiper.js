@@ -2,6 +2,7 @@ var swiper1 = new Swiper(".main-video .swiper-container", {
 	slidesPerView: 3,
     spaceBetween: 0,
 	loopAdditionalSlides: 2,
+	autoHeight: true,
 	loop: true,
 	speed: 1000,
 	observer: true,
@@ -131,6 +132,67 @@ var swiper5 = new Swiper(".swiper02 .swiper-container", {
 	navigation: {
 		nextEl: ".swiper02 .swiper-button-next",
 		prevEl: ".swiper02 .swiper-button-prev",
+	},
+});
+
+var swiper6 = new Swiper(".east-gallery .swiper-container", {
+	slidesPerView: 4,
+	initialSlides: 3,
+    spaceBetween: 55,
+	loopAdditionalSlides: 1,
+	loop: true,
+	speed: 1000,
+	observer: true,
+	observeParents: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	navigation: {
+		nextEl: ".east-gallery .swiper-button-next",
+		prevEl: ".east-gallery .swiper-button-prev",
+	},
+	breakpoints: {
+		1500: {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			centeredSlides: true,
+		},
+		991: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		767: {
+			slidesPerView: 1.5,
+			spaceBetween: 10,
+		},
+	},
+});
+
+var swiper7 = new Swiper(".top-type-data .swiper-container", {
+	slidesPerView: 4,
+    spaceBetween: 25,
+	loop: true,
+	speed: 1000,
+	observer: true,
+	observeParents: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	navigation: {
+		nextEl: ".top-type-data .swiper-button-next",
+		prevEl: ".top-type-data .swiper-button-prev",
+	},
+	breakpoints: {
+		1200: {
+			slidesPerView: 3,
+			spaceBetween: 15,
+		},
+		767: {
+			slidesPerView: 2.3,
+			spaceBetween: 10,
+		},
 	},
 });
 
