@@ -295,7 +295,7 @@ footer .footer-bottom ul li .info dl dd p {font-size:13px; margin-right:0;}
 @media (max-width:991px){
 .sub-search-form {width:100%; max-width:95%;}
 .sub-search-form form input {height:45px; padding:0 10px; font-size:14px;}
-.sub-search-form form select {font-size:14px; height:45px; background-size:17px 16px !important; padding-right:20px;}
+.sub-search-form form select {width:110px; font-size:14px; height:45px; background-size:17px 16px !important; padding-right:20px;}
 .sub-search-form form select option {font-size:12px;}
 .sub-search-form form .submit {width:40px; height:40px; background-size:20px;}
 }
@@ -395,10 +395,10 @@ footer .footer-bottom ul li .info dl dd p {font-size:13px; margin-right:0;}
 .sub-board-search form .board-search-right select {border-radius:5px; margin:0 10px 0 0; padding:0 32px 0 15px; border:1px solid #bebebe; height:52px; font-size:16px; color:#444; min-width:130px; background:url('../img/icon_select_gray.png') no-repeat calc(100% - 10px) center / 14px 8px;}
 .sub-board-search form .board-search-right a {display:flex; flex-wrap:wrap; align-items:center; justify-content:center; width:52px; height:52px; border-radius:5px; background:#e4e4e4; font-size:0; margin-right:10px;}
 .sub-board-search form .board-search-right a.active {background:#009d52;}
-.sub-board-search form .board-search-right a#galleryType {background:#e4e4e4 url('../img/icon_type_gallery.png') no-repeat center / 22px 22px;}
-.sub-board-search form .board-search-right a#listType {margin-right:0; background:#e4e4e4 url('../img/icon_type_list.png') no-repeat center / 24px 21px;}
-.sub-board-search form .board-search-right a.active#galleryType {background:#009d52 url('../img/icon_type_gallery_on.png') no-repeat center / 22px 22px;}
-.sub-board-search form .board-search-right a.active#listType {background:#009d52 url('../img/icon_type_list_on.png') no-repeat center / 24px 21px;}
+.sub-board-search form .board-search-right a#galleryType {background:#e4e4e4 url('../img/squares-inactive.png') no-repeat center / 22px 22px;}
+.sub-board-search form .board-search-right a#listType {margin-right:0; background:#e4e4e4 url('../img/list-inactive.png') no-repeat center / 24px 21px;}
+.sub-board-search form .board-search-right a.active#galleryType {background:#009d52 url('../img/squares-active.png') no-repeat center / 22px 22px;}
+.sub-board-search form .board-search-right a.active#listType {background:#009d52 url('../img/list-active.png') no-repeat center / 24px 21px;}
 @media (max-width:1500px){
 .sub-board-search form .board-search-left {flex:none; padding-right:0;}
 .sub-board-search form .board-search-right {width:100%; margin:10px 0 0;}
@@ -997,14 +997,31 @@ footer .footer-bottom ul li .info dl dd p {font-size:13px; margin-right:0;}
 .yanggu-list .list .list-item .list-content > ul li > * {height:32px; background:#e4e4e4; color:#fff; font-size:16px; line-height:1; padding:0 0 2px; display:flex; flex-wrap:wrap; align-items:center; justify-content:center;}
 .yanggu-list .list .list-item .list-content > ul li.active > * {background:#1b1b1b;}
 .yanggu-list .list .list-item:hover {border-color:#009d52;}
+
+.yanggu-list .list-text .list-item {
+	width:100%;
+	margin-bottom:0; border-bottom:none;
+	border-left:none; border-right:none; border-radius:0;
+}
+.yanggu-list .list-text .list-item:last-of-type {
+	border-bottom:1px solid #d1d1d1;
+}
+.yanggu-list .list-text .list-image {
+	display:none;
+}
+.yanggu-list .list-text .list-item .list-content > ul li {
+	width:100px;
+}
 @media (max-width:1500px){
 .yanggu-list .list {margin:0 -10px -20px;}
 .yanggu-list .list .list-item {width:calc(25% - 20px); margin:0 10px 20px;}
 .yanggu-list .list .list-item .list-content {padding:10px;}
 .yanggu-list .list .list-item .list-content > a {font-size:17px;}
+.yanggu-list .list-text .list-item {width:100%;}
 }
 @media (max-width:1200px){
 .yanggu-list .list .list-item {width:calc(33.33% - 20px);}
+.yanggu-list .list-text .list-item {width:100%;}
 }
 @media (max-width:991px){
 .yanggu-list {padding:0 0 50px;}
@@ -1018,11 +1035,14 @@ footer .footer-bottom ul li .info dl dd p {font-size:13px; margin-right:0;}
 .yanggu-list .list .list-item .list-content > ul {margin:5px -3px 0;}
 .yanggu-list .list .list-item .list-content > ul li {width:calc(33.33% - 6px); margin:0 3px;}
 .yanggu-list .list .list-item .list-content > ul li > * {font-size:11px; padding:0.1px 0 0; height:20px;}
+.yanggu-list .list-text .list-item {width:100%;}
 }
 @media (max-width:767px){
 .yanggu-list .list {margin:0 -2.5px -5px;}
 .yanggu-list .list .list-item {width:calc(50% - 5px); margin:0 2.5px 5px;}
 .yanggu-list .list .list-item .list-content {padding:0 10px 10px;}
+.yanggu-list .list-text .list-item {width:100%;}
+.yanggu-list .list-text .list-item .list-content > ul li {width:80px;}
 }
 
 /* yanggu-top */

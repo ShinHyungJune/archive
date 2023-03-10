@@ -80,3 +80,15 @@ $(document).on("click" , ".detail-toggle button" , function(){
 	$(this).parent().siblings().find("button").removeClass("active");
 	$(this).parent().siblings().find(".toggle-box").stop().slideUp();
 });
+
+$(document).ready(function(){
+	$(".sub-board-search form .board-search-right a").click(function(){
+		$(".sub-board-search form .board-search-right a").removeClass("active");
+		$(this).addClass("active");
+
+		if($(this).attr("id") === "galleryType")
+			return $(".yanggu-list .list").attr("class", "list list-gallery");
+
+		return $(".yanggu-list .list").attr("class", "list list-text");
+	});
+})
